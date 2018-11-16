@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build: .
+    # ports:
+    #   - 3000:3000
+  h2o:
+    image: lkwg82/h2o-http2-server
+    ports:
+      # - 80:80
+      - 443:443
+    volumes:
+      - ./h2o/conf:/etc/h2o
+      - ./h2o/log:/var/log/h2o
+      - ./h2o/cert:/cert

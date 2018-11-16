@@ -1,0 +1,3 @@
+node_modules/
+h2o/cert/*
+.DS_Store
