@@ -1,3 +1,4 @@
 node_modules/
 h2o/cert/*
+h2o/log/*
 .DS_Store
